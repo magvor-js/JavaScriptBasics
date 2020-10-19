@@ -37,7 +37,7 @@
     Il y a les opérations logiques
     && : et
     || : ou
-    ! : not
+    ! : not --> donne l'inverse d'un boolean donné
 
     Avec ET il faut les 2
     true && true ---> true
