@@ -78,6 +78,10 @@
     -= 1 ou -- : on diminue de 1
     etc.
 		
-		
-		
+
+## Tableaux
+
+    Pour créer un tableau on utilise des crochets: 
+    var prenoms = ["Magomed", "Abdoula", "Djabrail"];
+    		       0          1           2
     
