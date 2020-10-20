@@ -54,11 +54,16 @@
     
 ## Autres
     
-    La fonction prompt() retourne par défaut une chaine de caractères, 
-    pour pallier à ça, nous utiliserons la fonction:
-    parseInt() qui transforme le 'prompt()' en "number"
+    La fonction prompt() retourne par défaut une chaine de caractères (string), 
+    pour transformer en number, nous utiliserons la fonction:
+    parseInt() ==> 'prompt()' en "number"
+		
+		ex: parseInt(prompt('quel age tu as ?'));
     
     Sinon, pour vérifier quel type est:
-    typeOf (); il retourne soit string, number ou boolean
-    
+    typeof (); il retourne soit string, number ou boolean
+		
+		
+		
+		
     
