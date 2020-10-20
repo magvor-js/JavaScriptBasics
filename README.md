@@ -122,3 +122,9 @@ sayMyAgeIn10Years(currentUserAge);
     
     On peut mettre dans les tableaux toutes les valeurs qu'on veut : number, string, boolean, 
     dans l'ordre qu'on veut, comme on veut.
+    
+    On peut avoir des tableaux dans un tableau, et ainsi de suite...
+    
+    Pour changer la valeur d'un index dans le tableau:
+    prenoms[0]= "notMagomed"; (Magomed sera changé en notMagomed)
+    
