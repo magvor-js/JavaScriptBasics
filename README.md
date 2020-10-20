@@ -85,3 +85,7 @@
     var prenoms = ["Magomed", "Abdoula", "Djabrail"];
     		    0          1           2
     
+    prenoms[0] contient Magomed
+    
+    On peut mettre dans les tableaux toutes les valeurs qu'on veut : number, string, boolean, 
+    dans l'ordre qu'on veut, comme on veut.
