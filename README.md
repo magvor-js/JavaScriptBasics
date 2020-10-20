@@ -50,3 +50,15 @@
     true || false ---> true
     false || true ---> true
     false || false ---> false
+    
+    
+## Autres
+    
+    La fonction prompt() retourne par défaut une chaine de caractères, 
+    pour pallier à ça, nous utiliserons la fonction:
+    parseInt() qui transforme le 'prompt()' en "number"
+    
+    Sinon, pour vérifier quel type est:
+    typeOf (); il retourne soit string, number ou boolean
+    
+    
