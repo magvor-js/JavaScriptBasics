@@ -58,7 +58,10 @@
     pour transformer en number, nous utiliserons la fonction:
     parseInt() ==> 'prompt()' en "number"
 		
-		ex: parseInt(prompt('quel age tu as ?'));
+		ex: parseInt(prompt('quel age tu as ?', 10));
+		le "10" est utilisé pour dire base 10 (utilisé dans 99,99% des cas, 
+		"2" pour mettre en binaire... c'est le type de variables. 
+		On mettra 10 (type de variables dizaines).
     
     Sinon, pour vérifier quel type est:
     typeof (); il retourne soit string, number ou boolean
