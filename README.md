@@ -83,5 +83,5 @@
 
     Pour créer un tableau on utilise des crochets: 
     var prenoms = ["Magomed", "Abdoula", "Djabrail"];
-    		       0          1           2
+    		          0          1           2
     
