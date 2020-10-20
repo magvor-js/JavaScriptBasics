@@ -77,13 +77,46 @@
     += 1 ou ++ : on augmente de 1
     -= 1 ou -- : on diminue de 1
     etc.
-		
+
+## Fonctions (function)
+   ``` 
+    // je déclare une fonction qui prend 2 paramètres
+    // j'écris de recette réutilisable avec 2 ingrédients mystères
+function calculator(firstGrade, secondGrade) {
+    var moyenne = (firstGrade + secondGrade) / 2;
+    alert(moyenne);
+}
+
+// j'execute une fonction en passant 2 arguments
+// je cuisine ma recette en complétant les valeurs des 2 ingrédients mystères
+calculator(5, 10);
+
+calculator(10, 12);
+
+function sayMyAgeIn10Years(age) {
+    var newAge = parseInt(age, 10);
+    newAge = newAge + 10;
+    alert('Dans 10 ans tu auras ' + newAge + ' ans');
+}
+
+
+var user = 'Alexis';
+var userAge = 30;
+
+// qu'une valeur soit contenu dans une variable ou pas, ce qu'on passe en argument à une fonction, c'est la valeur
+sayMyAgeIn10Years(userAge);
+
+sayMyAgeIn10Years(25);
+
+var currentUserAge = prompt('tu as quel age ?');
+sayMyAgeIn10Years(currentUserAge);
+```
 
 ## Tableaux
 
     Pour créer un tableau on utilise des crochets: 
     var prenoms = ["Magomed", "Abdoula", "Djabrail"];
-    		    0          1           2
+    index:           0          1           2
     
     prenoms[0] contient Magomed
     
