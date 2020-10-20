@@ -62,10 +62,21 @@
 		le "10" est utilisé pour dire base 10 (utilisé dans 99,99% des cas, 
 		"2" pour mettre en binaire... c'est le type de variables. 
 		On mettra 10 (type de variables dizaines).
+		*PS: il est par défaut en base 10 (MAIS IL FAUT L'ECRIRE car certains
+		navigateurs ne l'ont pas par défaut !)*
+    
+    On peut aussi avoir un flottant: parseFloat()
+    
+    On peut aussi faire une transformation Number("63");
     
     Sinon, pour vérifier quel type est:
     typeof (); il retourne soit string, number ou boolean
 		
+    
+    Opérateur combiné pour les opérations arithmétiques:
+    += 1 ou ++ : on augmente de 1
+    -= 1 ou -- : on diminue de 1
+    etc.
 		
 		
 		
