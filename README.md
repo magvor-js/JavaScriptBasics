@@ -303,3 +303,126 @@ newElement.addEventListener('mouseenter', function(event) {
     console.log(event);
 });
 ```
+
+
+# Variables
+
+Les variables qu'on crée ont une portée
+
+Une variable définie en dehors d'une fonction est globale et donc accessible partout
+
+Une variable définie dans une fonction est locale et donc accessible uniquement dans la fonction
+
+```js
+// variable globale
+var toto = 123;
+
+function truc() {
+    // variable locale
+    var much = 'machin';
+
+    console.log(toto); // 123
+    console.log(much); // 'machin'
+}
+
+console.log(toto); // 123
+console.log(much); // error
+```
+
+## let
+
+`let` est un mot clé qui sert à la même chose que `var` c'est à dire créer une "boite" pour y mémoriser une valeur, ça s'utilise pareil
+
+```js
+// variable globale
+let toto = 123;
+
+function truc() {
+    // variable locale
+    let much = 'machin';
+
+    console.log(toto); // 123
+    console.log(much); // 'machin'
+}
+
+console.log(toto); // 123
+console.log(much); // error
+```
+
+### Différence avec var
+
+`let` possède une portée de block, un block de code (une condition, une boucle, ...)
+Une let définie dans un block ne le sera que dans le block
+
+```js
+if (3 < 5) {
+    let answer = true;
+    console.log(answer); // true
+}
+console.log(answer); // error
+```
+
+
+```js
+if (3 < 5) {
+    var answer = true;
+    console.log(answer); // true
+}
+console.log(answer); // true
+```
+
+
+## const
+
+`const` est un mot clé qui sert à la même chose que `var` c'est à dire créer une "boite" pour y mémoriser une valeur, ça s'utilise pareil
+
+```js
+// variable globale
+const toto = 123;
+
+function truc() {
+    // variable locale
+    const much = 'machin';
+
+    console.log(toto); // 123
+    console.log(much); // 'machin'
+}
+
+console.log(toto); // 123
+console.log(much); // error
+```
+
+
+### Différence avec var
+
+`const` possède une portée de block, un block de code (une condition, une boucle, ...)
+Une const définie dans un block ne le sera que dans le block
+
+
+```js
+if (3 < 5) {
+    const answer = true;
+    console.log(answer); // true
+}
+console.log(answer); // error
+```
+
+
+```js
+if (3 < 5) {
+    var answer = true;
+    console.log(answer); // true
+}
+console.log(answer); // true
+```
+
+###  Différence avec let
+
+`const` ne peut être réassigné, on parle de constante
+
+```js
+const gouter = 'kinder';
+console.log(gouter); // kinder
+gouter = 'chocapic'; // error
+```
+
