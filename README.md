@@ -431,6 +431,8 @@ gouter = 'chocapic'; // error
 
 /////////////////////////////////////////////////////
 
+
+
 # Intro à ES6 (EcmaScript 6 ou EcmaScript 2015)
 
 Avant il y avait ES5, qui est resté la norme pendant pas mal d'année
@@ -447,7 +449,7 @@ Pour vérifier la compatibilité on peut aller sur https://caniuse.com/
 
 ## let / const
 
-https://github.com/O-clock-Nautilus/S02-Ateler-Duo-Invaders-alexisOclock/blob/master/var.md
+CF: ci-dessus
 
 A la différence de var, let et const ont une portée de block
 
