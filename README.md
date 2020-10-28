@@ -426,3 +426,149 @@ console.log(gouter); // kinder
 gouter = 'chocapic'; // error
 ```
 
+
+
+
+/////////////////////////////////////////////////////
+
+# Intro à ES6 (EcmaScript 6 ou EcmaScript 2015)
+
+Avant il y avait ES5, qui est resté la norme pendant pas mal d'année
+
+En 2015 il y a eu un regain d'activité et depuis à date anniversaire tous les ans on a de nouvelles versions de la spécifications.
+
+L'idée c'est que javascript est langage qui peut être parlé légèrement différent ici et là, d'un navigateur à l'autre par exemple
+
+L'idée d'ecmascript est de standardiser la manière dont javascript doit être parlé, c'est un ensemble de règles.
+
+Les navigateurs vont pouvoir suivre ces spécifications pour essayer de tous parler pareil. Les navigateurs vont plus ou moins vite à adopoter ces spécifications. Donc il peut y avoir un décalage entre le moment où le langage évolue et où cette évolution est utilisable dans les navigateurs.
+
+Pour vérifier la compatibilité on peut aller sur https://caniuse.com/
+
+## let / const
+
+https://github.com/O-clock-Nautilus/S02-Ateler-Duo-Invaders-alexisOclock/blob/master/var.md
+
+A la différence de var, let et const ont une portée de block
+
+La const ne peut pas être réassigné
+
+Si on prend le partie d'utiliser les fonctionnalités ES6 parce que le support le support nous semble correct on préférera utiliser exclusivement `let` et `const` et pas `var`
+
+- Si ma donnée risque d'être réassigné je pars sur une `let`
+- Sinon je pars sur une `const`
+
+## template strings / template literals / Littéraux de gabarits / chaînes de caractère entre magic quotes
+
+Jusqu'à présent pour délimiter une chaîne de caractères on passait par simple ou double quotes
+```js
+var prenom = 'Alexis';
+var nom = "Vincent";
+```
+
+Pour concaténer on devait sortir de la chaîne et utiliser l'opérateur +
+```js
+var presentation = 'Bonjour je suis ' + prenom + ', comment ça va ?';
+```
+
+Pour écrire sur plusieurs lignes, c'était compliqué
+```js
+alert('Bonjour
+ça va ?'); // pas ok
+alert('Bonjour\nça va ?'); // ok
+```
+
+ES6 apporte les magic quotes, `
+Le caractère accent grave (Alt GR 7 sur un clavier standard)
+
+```js
+const prenom = `Alexis`;
+const nom = `Vincent`;
+```
+
+On va pouvoir concaténer sans sortir de la chaîne en entourant nos expressions avec ${}
+```js
+const presentation = `Bonjour je suis ${prenom}, comment ça va`; 
+const age = `J'ai ${18 + 12} ans.`
+const fullname = `Je m'appelle ${prenom} ${nom}`;
+```
+
+En plus on peut mettre des retours à la ligne
+```js
+alert(`Bonjour
+ça va ?`); // ok
+```
+
+## les fonctions fléchées
+
+Les fonctions fléchées sont un moyen plus light d'écrire des fonctions, moins verbeux.
+
+Il existe une petite différence entre les fonctions classiques et les fonctions fléchées qu'on ne verra pas aujourd'hui
+
+On connait les déclarations de fonctions
+```js
+function sayHello(firstName) {
+    return `Hello ${firstName}`;
+}
+
+sayHello('alexis');
+```
+
+On connait les expressions de fonctions
+```js
+const sayHello = function(firstName) {
+    return `Hello ${firstName}`;
+};
+
+sayHello('alexis');
+```
+
+Les expressions de fonctions peuvent s'écrire en version fléchée
+Pour passer en fléchée on enlève le mot function qu'on remplace par une grosse flèche (fat arrow =>) entre les parenthèses des paramètres et le corps de la fonction
+```js
+const sayHello = (firstName) => {
+    return `Hello ${firstName}`;
+};
+
+sayHello('alexis');
+```
+
+### Cas où l'on a qu'une instruction return
+
+Dans le cas ou la seule instruction présente dans la fonction est un return ON PEUT omettre mes accolades ET le return
+
+```js
+const sayHello = (firstName) => `Hello ${firstName}`;
+;
+
+sayHello('alexis');
+```
+
+### Cas où l'on a qu'un seul paramètre
+
+Dans le cas ou on a **1 seul** paramètre, ON PEUT omettre les parenthèses autour du paramètre
+
+```js
+const sayHello = firstName => `Hello ${firstName}`;
+;
+
+sayHello('alexis');
+```
+
+Si on a 0 et ou plusieurs paramètres on DOIT mettre les parenthèses
+```js
+const coucou = () => `coucou`;
+
+coucou();
+
+const hello = (firstName, lastName) => `Hello ${firstName} ${lastName}`;
+```
+
+
+
+
+
+
+
+
+
