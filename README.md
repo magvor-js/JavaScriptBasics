@@ -570,7 +570,7 @@ const hello = (firstName, lastName) => `Hello ${firstName} ${lastName}`;
 
 
 
-
+## Fonctions fléchées
 
 
 
