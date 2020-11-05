@@ -557,6 +557,7 @@ const sayHello = firstName => `Hello ${firstName}`;
 sayHello('alexis');
 ```
 
+
 Si on a 0 et ou plusieurs paramètres on DOIT mettre les parenthèses
 ```js
 const coucou = () => `coucou`;
@@ -568,9 +569,41 @@ const hello = (firstName, lastName) => `Hello ${firstName} ${lastName}`;
 
 
 
-
-
 ## Fonctions fléchées
 
 
 
+## Boucles (for ... of ET for ... in)
+
+for ... of est une boucle qui s'utilise uniquement sur les tableaux (array) => ça récupère l'index
+pour les objets, on utilise (for ... in) => ça récupère le nom de la propriété
+
+La boucle `for of` (pour les tableaux !)
+```js
+const array1 = ['a', 'b', 'c'];
+
+for (const element of array1) {
+  console.log(element);
+}
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
+```
+
+La boucle `for in` (pour les objets !)
+
+```js
+const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+// expected output:
+// "a: 1"
+// "b: 2"
+// "c: 3"
+
+```
