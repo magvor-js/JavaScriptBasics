@@ -4,10 +4,15 @@
 
 on a vu les opération arithmétiques:
 `+` : addition
+
 `-` : soustraction
+
 `/` : division
+
 `*` : multiplication
+
 `5 + 5` ----> 10
+
 Elles donnent toutes un nombre
 
 on a vu l'opération d'assignation
