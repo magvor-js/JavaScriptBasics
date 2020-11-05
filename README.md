@@ -670,3 +670,21 @@ for (const property in object) {
 // "c: 3"
 
 ```
+
+
+## Les conditions 
+
+### Conditions ternaire (ternary)
+```js
+// les conditions ternaires s'écrivent comme ceci
+// on pose la condition en premier, et si cette condition est
+// vraie on retourne ce qu'il y a après le point d'intérogation,
+// sinon on retourne ce qu'il y a après les 2 points
+displayButtons ? buttons : ''
+
+if (displayButtons) {
+  return buttons;
+} else {
+  return '';
+}
+```
