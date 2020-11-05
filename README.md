@@ -3,6 +3,7 @@
 ## A propos des opérateurs
 
 on a vu les opération arithmétiques:
+
 `+` : addition
 
 `-` : soustraction
