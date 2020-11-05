@@ -2,7 +2,7 @@
 
 ## A propos des opérateurs
 
-on a vu les opération arithmétiques:
+#### on a vu les opération arithmétiques:
 
 `+` : addition
 
@@ -16,7 +16,7 @@ on a vu les opération arithmétiques:
 
 Elles donnent toutes un nombre
 
-on a vu l'opération d'assignation:
+#### on a vu l'opération d'assignation:
 
 `=` : assigne
 
@@ -24,7 +24,7 @@ ex : `var toto = 'truc'`
 
 On range une valeur donnée à droite dans la broite appelée à gauche
 
-on a vu l'opération de concaténation
+#### on a vu l'opération de concaténation
 
 `+` : concatenation
 
@@ -34,7 +34,7 @@ ce qui determine si on fait une addition ou une concaténation ce sont les valeu
 
 Le résultat est une chaine de caratères
 
-Il y a les opérations de comparaisons
+#### Il y a les opérations de comparaisons
 
 `>` : strictement supérieur
 
@@ -50,7 +50,7 @@ Il y a les opérations de comparaisons
 
 (il existe la version double égale au lieu de triple, qui ne vérifie pas le type, c'est à éviter)
 
-Le resultat est un booléen
+#### Le resultat est un booléen
 
 `5 === 5` ---> `true`
 
@@ -58,7 +58,7 @@ Le resultat est un booléen
 
 `3 > 0.5` ---> `true`
 
-Il y a les opérations logiques
+#### Il y a les opérations logiques
 
 `&&` : et
 
@@ -66,7 +66,7 @@ Il y a les opérations logiques
 
 `!` : not --> donne l'inverse d'un boolean donné
 
-Avec `ET` il faut les 2
+#### Avec `ET` il faut les 2
 
 `true && true` ---> `true`
 
@@ -76,7 +76,7 @@ Avec `ET` il faut les 2
 
 `false && false` ---> `false`
 
-Avec `OU` il faut au moins 1 des 2
+#### Avec `OU` il faut au moins 1 des 2
 
 `true || true` ---> `true`
 
