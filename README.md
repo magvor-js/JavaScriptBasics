@@ -673,7 +673,9 @@ for (const property in object) {
 
 ## La boucle `find` qui s'applique à `array`:
 ```js
-// autre méthode pour trouver un élément dans un tablau : find()
+  // autre méthode pour trouver un élément dans un tablau : find()
+  // celle ci retourne le premier élément du tableau qui correspondra 
+  // à la comparaison qu'on lui fournit dans le callback
   // la méthode find prend en argument une fonction
   // cette fonction sera exécuter à chaque tour de boucle
   // et prendra en paramètre l'élément courant du tableau
