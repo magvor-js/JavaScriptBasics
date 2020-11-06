@@ -671,6 +671,26 @@ for (const property in object) {
 
 ```
 
+## La boucle `find` qui s'applique à `array`:
+```js
+// autre méthode pour trouver un élément dans un tablau : find()
+  // la méthode find prend en argument une fonction
+  // cette fonction sera exécuter à chaque tour de boucle
+  // et prendra en paramètre l'élément courant du tableau
+  nameArray.find(() => {});
+  
+  // ex:
+ const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find( (element) => { 
+	return element > 10
+});
+
+console.log(found);
+// expected output: 12
+
+```
+
 
 ## Les conditions 
 
